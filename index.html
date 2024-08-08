@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Booking Service</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <header class="dashboard-header">
+            <div class="logo">
+                <img src="IR_logo_Red_1024.png" alt="Railway Logo">
+                <h1>Railway Booking Service</h1>
+            </div>
+            <nav class="header-navigation">
+                <a href="#">Home</a>
+                <a href="#">Train Schedules</a>
+                <a href="#">Book Tickets</a>
+                <a href="#">Contact Us</a>
+            </nav>
+            <div class="user-profile">
+                <a href="#">Login</a>
+                <img src="pexels-photo-2379005.jpeg" alt="User Avatar">
+            </div>
+        </header>
+        <div class="dashboard-main">
+            <aside class="sidebar">
+                <nav class="sidebar-navigation">
+                    <a href="#" class="active"><span class="icon">🏠</span> Dashboard</a>
+                    <a href="#"><span class="icon">🗓️</span> My Bookings</a>
+                    <a href="#"><span class="icon">🔍</span> Search Trains</a>
+                    <a href="#"><span class="icon">📞</span> Contact Support</a>
+                </nav>
+            </aside>
+            <main class="content">
+                <div class="tabs">
+                    <a href="#" class="active">Book Tickets</a>
+                    <a href="#">My Bookings</a>
+                </div>
+                <section class="booking-form">
+                    <h2>Book Your Train Tickets</h2>
+                    <form action="#" method="post">
+                        <label for="origin">Origin:</label>
+                        <input type="text" id="origin" name="origin" required>
+                        
+                        <label for="destination">Destination:</label>
+                        <input type="text" id="destination" name="destination" required>
+                        
+                        <label for="date">Date of Travel:</label>
+                        <input type="date" id="date" name="date" required>
+                        
+                        <label for="class">Class:</label>
+                        <select id="class" name="class" required>
+                            <option value="sleeper">Sleeper</option>
+                            <option value="ac1">AC 1</option>
+                            <option value="ac2">AC 2</option>
+                            <option value="ac3">AC 3</option>
+                        </select>
+                        
+                        <label for="passenger-name">Passenger Name:</label>
+                        <input type="text" id="passenger-name" name="passenger-name" required>
+                        
+                        <button type="submit">Search Trains</button>
+                    </form>
+                </section>
+                <section class="available-trains">
+                    <h2>Available Trains</h2>
+                    <div class="train-list">
+                        <!-- Train items will be dynamically added here -->
+                        <div class="train-item">
+                            <h3>Train Name</h3>
+                            <p>Origin: City A</p>
+                            <p>Destination: City B</p>
+                            <p>Departure: 10:00 AM</p>
+                            <p>Arrival: 4:00 PM</p>
+                            <button>Book Now</button>
+                        </div>
+                        <!-- Add more train items as needed -->
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer class="dashboard-footer">
+            <p>&copy; 2024 Railway Booking Service. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
